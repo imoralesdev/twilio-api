@@ -1,0 +1,16 @@
+extends ../templates/main-layout
+
+block content
+  .main.main--conversation
+    h1.title Start a Conversation
+    h2.sub-title Enter your username and conversation title
+    .form
+      form.form__container(id="start_conversation")
+        .form__container-input
+          label.form__label
+          input.form__input(type="text" id="conversation_title" name="conversationTitle" placeholder="Conversation Title")
+        .form__container-input
+          label.form__label
+          input.form__input(type="text" id="conversation_username" name="conversationUsername" placeholder="Username")
+        .from__container-input
+          input.form__submit.btn-primary.btn-primary--blue(type="submit" value="Start" id="submit_conversation")

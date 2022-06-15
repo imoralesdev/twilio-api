@@ -1,0 +1,12 @@
+extends ../templates/main-layout
+
+block content
+  .main.main--chat
+    aside.conversation-list(id="conversation-list")
+      div Conversation
+    section.chat(id="chat")
+      h3.chat-title(id="chat_title") Chat Title
+      .chat-messages(id="chat_area")
+      .chat-input-container
+        textarea.chat-input__text(name='chat_text' rows='4' cols='50')
+        a.chat-input__submit(href="/" id="chat_submit")

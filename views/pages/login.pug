@@ -1,0 +1,13 @@
+extends ../templates/main-layout
+
+block content
+  .main.main--conversation
+    h1.title Conversation Login
+    h2.sub-title Enter your display name
+    .form
+      form.form__container(id="login_conversation")
+        .form__container-input
+          label.form__label
+          input.form__input(type="text" id="conversation_username" name="conversationUsername" placeholder="Username")
+        .from__container-input
+          input.form__submit.btn-primary.btn-primary--blue(type="submit" value="Enter" id="login_conversation")
